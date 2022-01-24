@@ -31,7 +31,7 @@ void setup()
   display.setTextSize(2);             // Normal 1:1 pixel scale
   display.setTextColor(SSD1306_WHITE);        // Draw white text
   display.setCursor(0,0);             // Start at top-left corner
-  display.println(F("Bonjour, \n Arnaud!"));
+  display.println(F("Bonjour, \n ANUMBY!"));
   display.display();
     Serial.println("Setup done");
 }
@@ -39,7 +39,9 @@ void setup()
 void loop()
 {
     Serial.println("scan start");
-
+      display.clearDisplay();
+  display.setTextSize(1);             // Normal 1:1 pixel scale
+  display.setCursor(0,0);             // Start at top-left corner
     // WiFi.scanNetworks will return the number of networks found
     int n = WiFi.scanNetworks();
     Serial.println("scan done");
@@ -58,6 +60,17 @@ void loop()
             Serial.print(")");
             Serial.println((WiFi.encryptionType(i) == WIFI_AUTH_OPEN)?" ":"*");
             delay(10);
+
+ // display.println(F("------"));
+  display.print(i + 1);
+            display.print(": ");
+            display.print(WiFi.SSID(i));
+            display.print(" (");
+            display.print(WiFi.RSSI(i));
+            display.println(")");
+  display.display();
+
+
         }
     }
     Serial.println("");
