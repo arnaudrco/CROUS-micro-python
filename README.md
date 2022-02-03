@@ -6,6 +6,12 @@ servo.duty(30) butée basse 0°
 servo.duty(122) butée haute 180°
 essayer une boucle avec un angle négatif servo.duty(10) : le servo va faire des tours complets !
 
-[Montages en python sur rasberry pico](https://github.com/anumby-source/raspberry-pico)
+Derniers ajouts
 
 [Montages sur esp32-C3](https://github.com/arnaudrco/CROUS-micro-python/blob/main/read-me-esp-C3.pdf)
+
+Autres liens
+
+[Montages en python sur rasberry pico](https://github.com/anumby-source/raspberry-pico)
+
+[Exemples de montages faciles](https://github.com/arnaudrco/exemples)
