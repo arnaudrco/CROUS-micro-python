@@ -8,22 +8,36 @@ except:
 
 import network
 
+
+from machine import Pin
+import time
+
+led=Pin(2,Pin.OUT)   
+
+
+for i in range(3):
+    time.sleep(1)
+    led.value(0)
+    time.sleep(1)
+    led.value(0.5)
+
 station = network.WLAN(network.AP_IF)
 station.active(True)
 station.config(essid='RCO')
 station.config(authmode=3,password='12345678')
 
 while station.isconnected() == False:
+
+try:
+  import usocket as socket
+except:
+  import socket
   pass
 
 print('Connection successful')
 print(station.ifconfig())
 
 
-from machine import Pin
-import time
-
-led=Pin(2,Pin.OUT)   
 
 
 def web_page():
