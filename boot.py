@@ -14,7 +14,7 @@ import time
 
 led=Pin(2,Pin.OUT)   
 
-# test de la LED interne 
+# test de la LED interne en la faisant clignoter 3 fois
 
 for i in range(3):
     time.sleep(1)
