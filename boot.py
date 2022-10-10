@@ -14,6 +14,7 @@ import time
 
 led=Pin(2,Pin.OUT)   
 
+# test de la LED interne 
 
 for i in range(3):
     time.sleep(1)
