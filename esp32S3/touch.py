@@ -1,3 +1,5 @@
+# testé sur S3 super mini 
+# la broche 48 sert à la fois pour la LED rouge et la couleur NEOPIXEL
 from machine import TouchPad, Pin
 import time
 from machine import Pin
