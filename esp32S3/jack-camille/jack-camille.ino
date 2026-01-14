@@ -1,5 +1,5 @@
-// TEST OK sur carte LOLIN S3 MIni, le 22/12/2024
-//
+// TEST  sur carte S3 Zero, le 1/1/2026 ArnaudRCO
+//  options outils > partition > HUGE APP et SPRAM > QSPI
 // Source :  https://www.xtronical.com/i2sinternetradio/
 // IDE Arduino 2.3.4
 // Core  ESP32 d'Espressif en version 3.1.0  
@@ -24,7 +24,7 @@
 Audio audio;
 
 String ssid =     "NUMERICABLE-63";
-String password = "camille01";
+String password = "xxx";
 
 
 void setup() {
