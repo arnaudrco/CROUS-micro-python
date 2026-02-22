@@ -18,4 +18,6 @@ jack PCM5100
 // Core  ESP32 d'Espressif en version 3.1.0  
 // Bibliothèque : https://github.com/schreibfaul1/ESP32-audioI2S  ( en VERSION  3.0.12)
 
+https://github.com/arnaudrco/CROUS-micro-python/wiki/esp32-S2-ou-S3
+
 
