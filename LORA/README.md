@@ -1,4 +1,11 @@
 
+# balise réalisée avec un c3
+
+<img width="554" height="617" alt="image" src="https://github.com/user-attachments/assets/6e9af0b1-67e1-49f0-a98f-c7b2e6fbf39c" />
+
+12864-c3-balise.ino
+
+
 # qualité de transmission (RSSI) pour LLCC68
 
 code pour balise avec RSSI
