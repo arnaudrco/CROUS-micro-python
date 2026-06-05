@@ -1,6 +1,17 @@
 
 # balise réalisée avec un c3
 
+
+- ESP32-C3 | ST7567A
+- GPIO6 | SCK
+- GPIO7 | MOSI
+- GPIO4 | CS
+- GPIO5 | DC
+- GPIO3 | RST
+- 3V3 | VCC
+- GND | GND
+
+
 <img width="554" height="617" alt="image" src="https://github.com/user-attachments/assets/6e9af0b1-67e1-49f0-a98f-c7b2e6fbf39c" />
 
 12864-c3-balise.ino
