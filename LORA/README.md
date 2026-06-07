@@ -1,4 +1,12 @@
 
+# afficher sur écran lcd 128x64
+
+Ce n'est pas encore la fonction "feed" ; 1 ligne reste en mode inversé et 7 lignes sont affichées
+
+<img width="585" height="609" alt="image" src="https://github.com/user-attachments/assets/960550c8-7c1c-4873-b631-ce22f265f434" />
+
+12864-c3-hello-print.ino
+
 # balise réalisée avec un c3
 
 
