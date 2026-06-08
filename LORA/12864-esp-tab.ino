@@ -1,5 +1,10 @@
 /*
- 
+
+AFFICHAGE RSSI 
+c est le dernier caractère reçu
+    int rssi = -(0xFF - c);
+    display.print(rssi);
+
 ------------ BALISE avec affichage 12864 ---------------------
  
 E220         ----- Wemos D1 mini
@@ -71,7 +76,6 @@ display.println("LORA 7567");
 }
 
 void loop() { // ---------- reception de n caracteres -----------
-   byte data[2048];
   char c;
   int n ; // nb de caractères disponible
   if (n=mySerial.available()) { 
@@ -90,10 +94,12 @@ void loop() { // ---------- reception de n caracteres -----------
     for (int i = 0; i <= n; i++) {
       c = mySerial.read();
       Serial.write(c); // renvoie le caractère
-      data[i] = c;
       display.print(c);
       
     }
+    c = mySerial.read(); // AB caractère supplémentaire 
+        int rssi = -(0xFF - c);
+        if (rssi !=0) display.print(rssi);
   }
 
   if (Serial.available()) { // ------------- emission ------------ 
