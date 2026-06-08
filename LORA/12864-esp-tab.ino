@@ -66,7 +66,7 @@ display.println("LORA 7567");
 
     Serial.println("Hi, I'm going to send message!");
  
-  mySerial.println("Hello, world?");
+  mySerial.println("Bonjour ANUMBY");
   delay(1000);
 }
 
@@ -74,7 +74,16 @@ void loop() { // ---------- reception de n caracteres -----------
    byte data[2048];
   char c;
   int n ; // nb de caractères disponible
-  if (n=mySerial.available()) {
+  if (n=mySerial.available()) { 
+    ligne++;
+    if ( ligne > 7){ // retour ligne 1 
+      ligne = 1;  
+    } 
+    if(ligne < 7){
+        display.setCursor(0, ligne+1);
+        display.println("-       ");
+      } 
+    display.setCursor(0, ligne);
       Serial.print("nb de caractères disponible ");
       Serial.println(n);
     // écriture du tableau data
@@ -82,8 +91,7 @@ void loop() { // ---------- reception de n caracteres -----------
       c = mySerial.read();
       Serial.write(c); // renvoie le caractère
       data[i] = c;
-      if ((i==n) && (c != 32) )
-        display.println(c); else display.print(c);
+      display.print(c);
       
     }
   }
@@ -93,7 +101,7 @@ void loop() { // ---------- reception de n caracteres -----------
   }
       if (millis() - lastQuery > queryInterval) {
     lastQuery = millis();
-    mySerial.print(comptage++);mySerial.print(" ");
+    mySerial.print(comptage++); // mySerial.print(" ");
     if( comptage > 100 ) comptage = 0;// comptage 99 max
   }
 
