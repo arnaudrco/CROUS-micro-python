@@ -7,6 +7,12 @@ Ce n'est pas encore la fonction "feed" ; 1 ligne reste en mode inversé et 7 lig
 
 12864-c3-hello-print.ino
 
+# Balise 12864 avec esp8266
+
+<img width="607" height="590" alt="image" src="https://github.com/user-attachments/assets/b31d8982-db14-47f6-b099-8f4bca3ee4db" />
+
+12864-esp-tab.ino
+
 # balise réalisée avec un c3
 
 
