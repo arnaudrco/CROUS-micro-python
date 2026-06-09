@@ -1,4 +1,13 @@
 
+
+# Balise en Python
+
+UART1 pour ESP32-C3 : TX=GPIO21, RX=GPIO20 par défaut
+E220-900T : TX module -> RX ESP32, RX module -> TX ESP32
+uart = UART(1, baudrate=9600, tx=21, rx=20)
+
+hello.py
+
 # afficher sur écran lcd 128x64
 
 Ce n'est pas encore la fonction "feed" ; 1 ligne reste en mode inversé et 7 lignes sont affichées
