@@ -2,6 +2,10 @@
 
 # Balise en Python
 
+<img width="400" height="415" alt="image" src="https://github.com/user-attachments/assets/2a0125a2-dd0f-40ac-99a9-e4fa95537eb4" />
+
+Balise Python avec module LORA LR30
+
 UART1 pour ESP32-C3 : TX=GPIO21, RX=GPIO20 par défaut
 E220-900T : TX module -> RX ESP32, RX module -> TX ESP32
 uart = UART(1, baudrate=9600, tx=21, rx=20)
