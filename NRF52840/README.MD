@@ -19,3 +19,5 @@ micro Bluetooth avec une ProMicro nRF52840 + INMP441. C’est le combo classique
 * WS	P0.24	I2S LRCLK
 * SCK	P0.23	I2S SCLK
 * L/R	GND	Canal gauche. Mets à VDD pour droit
+
+CODE nrf-inmp.ino
