@@ -1,3 +1,6 @@
+mise à jour bootloader sur
+
+https://github.com/arnaudrco/exemples/blob/main/NRF52/README.md
 
 # [Banc-de-test-microphone-MEMS](https://github.com/anumby-source/jouets/wiki/Banc-de-test-microphone-MEMS)
 
