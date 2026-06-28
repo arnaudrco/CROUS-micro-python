@@ -1,4 +1,4 @@
-mise à jour bootloader sur
+Attention sur certaine versions mise à jour bootloader nécessaire
 
 https://github.com/arnaudrco/exemples/blob/main/NRF52/README.md
 
