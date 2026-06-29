@@ -1,10 +1,12 @@
 # Tester le composant SX1262
 
-SX1262 est très utilisé pour construire
+SX1262 est très utilisé pour construire des répondeurs LORA
 
 <img width="476" height="394" alt="image" src="https://github.com/user-attachments/assets/9f05fd3d-b34d-4749-b1fa-491f8090cf9c" />
 
 CODE 1262-test.ino
+
+Pas toujours simple à brancher ; site pour les pins pour les applications commerciales 
 
 https://github.com/radiolib-org/RadioBoards/tree/main
 
