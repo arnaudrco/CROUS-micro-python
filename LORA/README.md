@@ -1,3 +1,14 @@
+# Tester le composant SX1262
+
+SX1262 est très utilisé pour construire
+
+<img width="476" height="394" alt="image" src="https://github.com/user-attachments/assets/9f05fd3d-b34d-4749-b1fa-491f8090cf9c" />
+
+CODE 1262-test.ino
+
+https://github.com/radiolib-org/RadioBoards/tree/main
+
+
 # afficher avec python sur écran 128 x 64
 
 <img width="394" height="567" alt="image" src="https://github.com/user-attachments/assets/7e2c844a-3bae-4376-81d4-c32ce8a9756f" />
