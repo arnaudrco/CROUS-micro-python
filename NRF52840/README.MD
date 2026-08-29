@@ -24,3 +24,7 @@ micro Bluetooth avec une ProMicro nRF52840 + INMP441. C’est le combo classique
 * L/R	GND	Canal gauche. Mets à VDD pour droit
 
 CODE nrf-inmp.ino
+
+# faire clignoter 
+
+nrf-fading.ino
