@@ -1,3 +1,5 @@
+// LED sur pin 22 indique le son
+
 #include <ESP_I2S.h>
 
 I2SClass I2S;
@@ -6,9 +8,16 @@ constexpr int PIN_BCLK = 26;  // SCK de l'INMP441
 constexpr int PIN_WS   = 25;  // WS
 constexpr int PIN_SD   = 33;  // SD, données du micro
 
+#define ledPin 22
+
 void setup() {
   Serial.begin(115200);
-
+  for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 5) {
+    // sets the value (range from 0 to 255):
+    analogWrite(ledPin, fadeValue);
+    // wait for 30 milliseconds to see the dimming effect
+    delay(30);
+  }
   // INMP441 : I2S, réception seulement, 24 kHz, échantillons 32 bits
   I2S.setPins(PIN_BCLK, PIN_WS, -1, PIN_SD, -1);
 
@@ -35,11 +44,14 @@ void loop() {
       return;
     }
 
-    // Le signal utile du INMP441 est sur les bits de poids fort.
+    // Le signal utile du INMP441 est sur les bits de poids fort. 24 bits 
     int32_t audio = echantillon >> 8;
     somme += (int64_t)audio * audio;
   }
 
   float rms = sqrt((double)somme / nombreEchantillons);
   Serial.println(rms);
+  rms= rms / 4096 ; // 2 puissance 12
+  if (rms > 255 ) rms=255;
+    analogWrite(ledPin,255 - rms);
 }
