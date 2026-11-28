@@ -30,7 +30,7 @@ affiche l'amplitude du son (rms)
 
 # lire depuis une source BT
 
-j'utilise la librairie A2DP source et sink
+A finir : le programme donne seulement du bruit  ; j'utilise la librairie A2DP source et sink
 
 xxxx-a2dp.ino
 
