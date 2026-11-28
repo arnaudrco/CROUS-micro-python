@@ -4,7 +4,7 @@ CODE https://github.com/anumby-source/jouets/blob/main/a2dp-i2s/README.MD
 
 <img width="249" height="328" alt="image" src="https://github.com/user-attachments/assets/29a3d41a-9778-4663-8314-1f28cf3a3e3c" />
 
-Pour comprendre le fonctionnement, voici un montage avec 2 composants esp32 et un lecteur PCM5100 soudé sur un connecteur femelle
+ATTENTION La dernière broche (SCK) doit être à GND. Pour comprendre le fonctionnement, voici un montage avec 2 composants esp32 et un lecteur PCM5100 soudé sur un connecteur femelle
 
 <img width="644" height="554" alt="image" src="https://github.com/user-attachments/assets/bfb2782a-65ba-4758-abd0-3cf22bb7e120" />
 
